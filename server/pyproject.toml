@@ -1,16 +1,25 @@
 [tool.poetry]
-name = "my-backend-app"
+name = "server"
 version = "0.1.0"
 description = "A FastAPI backend application"
 authors = ["Your Name <youremail@example.com>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.12"
 fastapi = "^0.75.0"
 uvicorn = "^0.17.0"
 boto3 = "^1.36.16"
+python-dotenv = "^1.0.1"
+psycopg2-binary = "^2.9.10"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+packages = [
+    { include = "cmd" }
+]
+
+[tool.poetry.scripts]
+start = "src.main:start"

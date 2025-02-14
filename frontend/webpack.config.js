@@ -5,6 +5,7 @@ module.exports = {
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
+        clean: true, // Ensure the output directory is cleaned before each build
     },
     module: {
         rules: [
@@ -37,8 +38,12 @@ module.exports = {
     },
     devtool: 'source-map',
     devServer: {
-        contentBase: path.join(__dirname, 'dist'),
+        static: {
+            directory: path.resolve(__dirname, 'dist')
+        },
         compress: true,
         port: 9000,
-    },
+        hot: true,
+        open: true,
+    }
 };
