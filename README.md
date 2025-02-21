@@ -13,7 +13,7 @@ my-web-app
 ├── frontend
 │   ├── src
 │   │   ├── index.html       # Main HTML file for the frontend
-│   │   ├── index.js         # JavaScript code for the frontend
+│   │   ├── index.ts         # JavaScript code for the frontend
 │   │   └── styles.css       # CSS styles for the frontend
 │   ├── package.json         # npm configuration for the frontend
 │   └── webpack.config.js    # Webpack configuration for bundling the frontend

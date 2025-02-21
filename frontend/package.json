@@ -1,40 +1,28 @@
 {
-  "name": "mindful-sounds",
-  "version": "1.0.0",
-  "description": "A web application for searching and playing audio files.",
-  "main": "src/index.js",
+  "name": "mindful_sounds",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "start": "webpack serve --open",
-    "build": "webpack --mode production"
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
-    "@fontsource/roboto": "^5.1.1",
-    "@mui/icons-material": "^6.4.3",
-    "@mui/material": "^6.4.3",
     "axios": "^1.7.9",
-    "howler": "^2.2.3",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "next": "15.1.7",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
-    "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.0",
-    "css-loader": "^6.0.0",
-    "file-loader": "^6.0.0",
-    "style-loader": "^3.0.0",
-    "webpack": "^5.97.1",
-    "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.15.2"
-  },
-  "keywords": [
-    "audio",
-    "web-app",
-    "react"
-  ],
-  "author": "Your Name",
-  "license": "MIT"
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.7",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
 }

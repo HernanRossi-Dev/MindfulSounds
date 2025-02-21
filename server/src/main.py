@@ -9,7 +9,7 @@ BUCKET_NAME = os.getenv('S3_BUCKET_NAME')
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return {"message": "Default Route"}
 
 @app.get('/search')
 async def search_audio():
